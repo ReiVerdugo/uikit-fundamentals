@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PresentModally" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MsD-Tq-TfE">
+                                <state key="normal" title="Present"/>
+                                <connections>
+                                    <action selector="experiment:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1D-hr-NSW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bbl-KO-vqi">
+                                <state key="normal" title="Show ActivityView"/>
+                                <connections>
+                                    <action selector="showActivityView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQC-rI-gOS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HL6-vZ-IQC">
+                                <state key="normal" title="Show Alert View"/>
+                                <connections>
+                                    <action selector="showAlertView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uc3-sK-E3L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MsD-Tq-TfE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="R4J-6X-WPw"/>
+                            <constraint firstItem="HL6-vZ-IQC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wzt-hT-DQr"/>
+                            <constraint firstItem="Bbl-KO-vqi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bET-Uk-Eu8"/>
+                            <constraint firstItem="MsD-Tq-TfE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fw5-G3-35R"/>
+                            <constraint firstItem="Bbl-KO-vqi" firstAttribute="top" secondItem="MsD-Tq-TfE" secondAttribute="bottom" constant="20" id="sej-qo-MCq"/>
+                            <constraint firstItem="HL6-vZ-IQC" firstAttribute="top" secondItem="Bbl-KO-vqi" secondAttribute="bottom" constant="25" id="yvS-gb-0O3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
