@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FCC811A1DA9B6D200392890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC81191DA9B6D200392890 /* AppDelegate.swift */; };
+		0FCC811C1DA9B6D200392890 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC811B1DA9B6D200392890 /* ViewController.swift */; };
+		0FCC811F1DA9B6D200392890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC811D1DA9B6D200392890 /* Main.storyboard */; };
+		0FCC81211DA9B6D200392890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC81201DA9B6D200392890 /* Assets.xcassets */; };
+		0FCC81241DA9B6D200392890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC81221DA9B6D200392890 /* LaunchScreen.storyboard */; };
+		0FCC81321DA9B8EB00392890 /* itsATie.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC812B1DA9B8EB00392890 /* itsATie.png */; };
+		0FCC81331DA9B8EB00392890 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC812C1DA9B8EB00392890 /* paper.png */; };
+		0FCC81341DA9B8EB00392890 /* PaperCoversRock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC812D1DA9B8EB00392890 /* PaperCoversRock.jpg */; };
+		0FCC81351DA9B8EB00392890 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC812E1DA9B8EB00392890 /* rock.png */; };
+		0FCC81361DA9B8EB00392890 /* RockCrushesScissors.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC812F1DA9B8EB00392890 /* RockCrushesScissors.jpeg */; };
+		0FCC81371DA9B8EB00392890 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC81301DA9B8EB00392890 /* scissors.png */; };
+		0FCC81381DA9B8EB00392890 /* ScissorsCutPaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0FCC81311DA9B8EB00392890 /* ScissorsCutPaper.jpg */; };
+		0FCC813B1DA9BC9700392890 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCC813A1DA9BC9700392890 /* SecondViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FCC81161DA9B6D200392890 /* Roshambo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Roshambo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FCC81191DA9B6D200392890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0FCC811B1DA9B6D200392890 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FCC811E1DA9B6D200392890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FCC81201DA9B6D200392890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FCC81231DA9B6D200392890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FCC81251DA9B6D200392890 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FCC812B1DA9B8EB00392890 /* itsATie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = itsATie.png; sourceTree = "<group>"; };
+		0FCC812C1DA9B8EB00392890 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		0FCC812D1DA9B8EB00392890 /* PaperCoversRock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = PaperCoversRock.jpg; sourceTree = "<group>"; };
+		0FCC812E1DA9B8EB00392890 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		0FCC812F1DA9B8EB00392890 /* RockCrushesScissors.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RockCrushesScissors.jpeg; sourceTree = "<group>"; };
+		0FCC81301DA9B8EB00392890 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		0FCC81311DA9B8EB00392890 /* ScissorsCutPaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ScissorsCutPaper.jpg; sourceTree = "<group>"; };
+		0FCC813A1DA9BC9700392890 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FCC81131DA9B6D100392890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FCC810D1DA9B6D100392890 = {
+			isa = PBXGroup;
+			children = (
+				0FCC81181DA9B6D200392890 /* Roshambo App */,
+				0FCC81171DA9B6D200392890 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FCC81171DA9B6D200392890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC81161DA9B6D200392890 /* Roshambo App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FCC81181DA9B6D200392890 /* Roshambo App */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC81191DA9B6D200392890 /* AppDelegate.swift */,
+				0FCC811B1DA9B6D200392890 /* ViewController.swift */,
+				0FCC813A1DA9BC9700392890 /* SecondViewController.swift */,
+				0FCC811D1DA9B6D200392890 /* Main.storyboard */,
+				0FCC81391DA9B8F500392890 /* Assets */,
+				0FCC81201DA9B6D200392890 /* Assets.xcassets */,
+				0FCC81221DA9B6D200392890 /* LaunchScreen.storyboard */,
+				0FCC81251DA9B6D200392890 /* Info.plist */,
+			);
+			path = "Roshambo App";
+			sourceTree = "<group>";
+		};
+		0FCC81391DA9B8F500392890 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0FCC812B1DA9B8EB00392890 /* itsATie.png */,
+				0FCC812C1DA9B8EB00392890 /* paper.png */,
+				0FCC812D1DA9B8EB00392890 /* PaperCoversRock.jpg */,
+				0FCC812E1DA9B8EB00392890 /* rock.png */,
+				0FCC812F1DA9B8EB00392890 /* RockCrushesScissors.jpeg */,
+				0FCC81301DA9B8EB00392890 /* scissors.png */,
+				0FCC81311DA9B8EB00392890 /* ScissorsCutPaper.jpg */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FCC81151DA9B6D100392890 /* Roshambo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FCC81281DA9B6D200392890 /* Build configuration list for PBXNativeTarget "Roshambo App" */;
+			buildPhases = (
+				0FCC81121DA9B6D100392890 /* Sources */,
+				0FCC81131DA9B6D100392890 /* Frameworks */,
+				0FCC81141DA9B6D100392890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Roshambo App";
+			productName = "Roshambo App";
+			productReference = 0FCC81161DA9B6D200392890 /* Roshambo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FCC810E1DA9B6D100392890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Reinaldo Verdugo";
+				TargetAttributes = {
+					0FCC81151DA9B6D100392890 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 53NS6Y49FB;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0FCC81111DA9B6D100392890 /* Build configuration list for PBXProject "Roshambo App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FCC810D1DA9B6D100392890;
+			productRefGroup = 0FCC81171DA9B6D200392890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FCC81151DA9B6D100392890 /* Roshambo App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FCC81141DA9B6D100392890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCC81381DA9B8EB00392890 /* ScissorsCutPaper.jpg in Resources */,
+				0FCC81241DA9B6D200392890 /* LaunchScreen.storyboard in Resources */,
+				0FCC81361DA9B8EB00392890 /* RockCrushesScissors.jpeg in Resources */,
+				0FCC81331DA9B8EB00392890 /* paper.png in Resources */,
+				0FCC81321DA9B8EB00392890 /* itsATie.png in Resources */,
+				0FCC81351DA9B8EB00392890 /* rock.png in Resources */,
+				0FCC81341DA9B8EB00392890 /* PaperCoversRock.jpg in Resources */,
+				0FCC81211DA9B6D200392890 /* Assets.xcassets in Resources */,
+				0FCC811F1DA9B6D200392890 /* Main.storyboard in Resources */,
+				0FCC81371DA9B8EB00392890 /* scissors.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FCC81121DA9B6D100392890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FCC813B1DA9BC9700392890 /* SecondViewController.swift in Sources */,
+				0FCC811C1DA9B6D200392890 /* ViewController.swift in Sources */,
+				0FCC811A1DA9B6D200392890 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0FCC811D1DA9B6D200392890 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FCC811E1DA9B6D200392890 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FCC81221DA9B6D200392890 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FCC81231DA9B6D200392890 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FCC81261DA9B6D200392890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0FCC81271DA9B6D200392890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FCC81291DA9B6D200392890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 53NS6Y49FB;
+				INFOPLIST_FILE = "Roshambo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "reiverdugo.Roshambo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0FCC812A1DA9B6D200392890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 53NS6Y49FB;
+				INFOPLIST_FILE = "Roshambo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "reiverdugo.Roshambo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FCC81111DA9B6D100392890 /* Build configuration list for PBXProject "Roshambo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FCC81261DA9B6D200392890 /* Debug */,
+				0FCC81271DA9B6D200392890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FCC81281DA9B6D200392890 /* Build configuration list for PBXNativeTarget "Roshambo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FCC81291DA9B6D200392890 /* Debug */,
+				0FCC812A1DA9B6D200392890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FCC810E1DA9B6D100392890 /* Project object */;
+}
