@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChallengeTextfieldApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your zipcode" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xan-wK-Bvg">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QP2-Zr-eyf">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0db-dN-nS4">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WrT-do-6yB">
+                                <connections>
+                                    <action selector="switched:" destination="BYZ-38-t0r" eventType="valueChanged" id="qFk-P7-ro5"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WrT-do-6yB" firstAttribute="leading" secondItem="0db-dN-nS4" secondAttribute="trailing" constant="5" id="Bva-fl-fMJ"/>
+                            <constraint firstItem="QP2-Zr-eyf" firstAttribute="centerX" secondItem="xan-wK-Bvg" secondAttribute="centerX" id="N07-xC-RK1"/>
+                            <constraint firstItem="0db-dN-nS4" firstAttribute="leading" secondItem="QP2-Zr-eyf" secondAttribute="leading" id="QsY-ug-Th1"/>
+                            <constraint firstItem="0db-dN-nS4" firstAttribute="top" secondItem="QP2-Zr-eyf" secondAttribute="bottom" constant="10" id="a02-a0-x87"/>
+                            <constraint firstItem="WrT-do-6yB" firstAttribute="trailing" secondItem="QP2-Zr-eyf" secondAttribute="trailing" id="cKp-HE-UDx"/>
+                            <constraint firstItem="QP2-Zr-eyf" firstAttribute="top" secondItem="xan-wK-Bvg" secondAttribute="bottom" constant="10" id="dRu-d8-7EE"/>
+                            <constraint firstItem="xan-wK-Bvg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eSJ-nu-d54"/>
+                            <constraint firstItem="WrT-do-6yB" firstAttribute="centerY" secondItem="0db-dN-nS4" secondAttribute="centerY" id="mac-l6-lls"/>
+                            <constraint firstItem="xan-wK-Bvg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.2" id="rT8-Fl-uaa"/>
+                            <constraint firstItem="xan-wK-Bvg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="waf-vq-U2u"/>
+                            <constraint firstItem="QP2-Zr-eyf" firstAttribute="width" secondItem="xan-wK-Bvg" secondAttribute="width" id="yVm-a7-rV5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cashField" destination="QP2-Zr-eyf" id="Bz5-Yk-4VF"/>
+                        <outlet property="lockableField" destination="0db-dN-nS4" id="3rZ-9F-FbE"/>
+                        <outlet property="zipcodeField" destination="xan-wK-Bvg" id="WG1-G8-skN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
