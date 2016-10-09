@@ -23,6 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     let emojiDelegate = EmojiTextFieldDelegate()
     let colorizerDelegate = ColorizerTextFieldDelegate()
+    let randomColorDelegate = RandomColorTextFieldDelegate()
     
     // MARK: Life Cycle
     
@@ -35,7 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         // Set the three delegates
         self.textField1.delegate = emojiDelegate
         self.textField2.delegate = colorizerDelegate
-        self.textField3.delegate = self
+        self.textField3.delegate = randomColorDelegate
     }
 
     
