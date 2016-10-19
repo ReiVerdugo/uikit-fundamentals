@@ -26,13 +26,13 @@
                                         <rect key="frame" x="0.0" y="22" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FT2-ej-wQz" id="4Uk-Ly-egX">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="laf-UG-wu1"/>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="EFZ-z2-BNo"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Epp-Id-3rm"/>
                                 </connections>
                             </tableView>
