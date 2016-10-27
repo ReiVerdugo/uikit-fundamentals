@@ -22,7 +22,10 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func playAgain(_ sender: AnyObject) {
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+        if let navigationController = self.navigationController {
+            navigationController.popToRootViewController(animated: true)
+        }
     }
     
     func verifyResult () {

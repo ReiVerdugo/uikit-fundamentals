@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uM9-Fr-pqn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nOl-4t-oKY">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">You wake up in the middle of an empty room, there's a window, and a closed door.
+What do you do?</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzY-HT-6re">
+                                <state key="normal" title="Jump through the window!"/>
+                                <connections>
+                                    <segue destination="dKC-R7-JQS" kind="show" id="ZHj-eR-rdD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTs-oX-pGS">
+                                <state key="normal" title="Force the door"/>
+                                <connections>
+                                    <segue destination="rmr-W8-ECm" kind="show" id="Bgf-1s-VGu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cTs-oX-pGS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ux-GW-oCY"/>
+                            <constraint firstItem="pzY-HT-6re" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EW0-ss-MTD"/>
+                            <constraint firstItem="nOl-4t-oKY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="HAH-Dv-65C"/>
+                            <constraint firstItem="nOl-4t-oKY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="XKU-n7-C6B"/>
+                            <constraint firstItem="cTs-oX-pGS" firstAttribute="top" secondItem="pzY-HT-6re" secondAttribute="bottom" constant="15" id="azg-bc-5xG"/>
+                            <constraint firstItem="nOl-4t-oKY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="dUT-Hs-AAv"/>
+                            <constraint firstItem="nOl-4t-oKY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eON-2B-GTx"/>
+                            <constraint firstItem="pzY-HT-6re" firstAttribute="top" secondItem="nOl-4t-oKY" secondAttribute="bottom" constant="15" id="nqe-BG-hri"/>
+                            <constraint firstItem="cTs-oX-pGS" firstAttribute="width" secondItem="pzY-HT-6re" secondAttribute="width" id="oMt-M1-lXr"/>
+                            <constraint firstItem="pzY-HT-6re" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="roT-35-2s3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xeZ-g9-epZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="-561"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fAC-Nn-Anv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uM9-Fr-pqn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F8z-9b-3Tb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Aft-hA-ncf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M62-eM-Suo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151.19999999999999" y="-560.86956521739137"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WG4-lj-5It">
+            <objects>
+                <viewController id="dKC-R7-JQS" customClass="ViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jPe-dF-waq"/>
+                        <viewControllerLayoutGuide type="bottom" id="ltQ-Wg-WZh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WfO-3p-XTp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You land on a swimming pool, and see police sirens a few feet away, but they are going away." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WmS-6F-ege">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xn6-3j-s9F">
+                                <state key="normal" title="Scream so they can hear you"/>
+                                <connections>
+                                    <segue destination="pBG-kb-BM3" kind="show" id="8xq-5P-fPK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTy-Qn-MAF">
+                                <state key="normal" title="Try to run after them"/>
+                                <connections>
+                                    <segue destination="K2R-zy-uDF" kind="show" id="H5M-rc-V90"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WmS-6F-ege" firstAttribute="top" secondItem="jPe-dF-waq" secondAttribute="bottom" id="0xu-8K-2xl"/>
+                            <constraint firstItem="Xn6-3j-s9F" firstAttribute="centerX" secondItem="WfO-3p-XTp" secondAttribute="centerX" id="3ME-KP-w9I"/>
+                            <constraint firstItem="WmS-6F-ege" firstAttribute="centerX" secondItem="WfO-3p-XTp" secondAttribute="centerX" id="JRi-aA-yZ1"/>
+                            <constraint firstItem="Xn6-3j-s9F" firstAttribute="width" secondItem="WfO-3p-XTp" secondAttribute="width" id="RF2-VB-s0n"/>
+                            <constraint firstItem="GTy-Qn-MAF" firstAttribute="top" secondItem="Xn6-3j-s9F" secondAttribute="bottom" constant="15" id="Y62-CU-OrT"/>
+                            <constraint firstItem="GTy-Qn-MAF" firstAttribute="width" secondItem="Xn6-3j-s9F" secondAttribute="width" id="aoW-5K-Ouk"/>
+                            <constraint firstItem="WmS-6F-ege" firstAttribute="height" secondItem="WfO-3p-XTp" secondAttribute="height" multiplier="0.5" id="br7-SL-nMx"/>
+                            <constraint firstItem="Xn6-3j-s9F" firstAttribute="top" secondItem="WmS-6F-ege" secondAttribute="bottom" constant="15" id="mXa-5j-A1X"/>
+                            <constraint firstItem="GTy-Qn-MAF" firstAttribute="centerX" secondItem="WfO-3p-XTp" secondAttribute="centerX" id="ql1-g1-458"/>
+                            <constraint firstItem="WmS-6F-ege" firstAttribute="width" secondItem="WfO-3p-XTp" secondAttribute="width" multiplier="0.85" id="rhq-SB-0ZH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uxy-6W-nWF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qDs-nC-t2e" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="-562"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="M89-K3-frF">
+            <objects>
+                <viewController id="rmr-W8-ECm" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2uN-mk-LK3"/>
+                        <viewControllerLayoutGuide type="bottom" id="I0i-vV-qzv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mxD-ZM-hhx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ewK-TG-c9S">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The door opens. Your captors are there, and THEY SAW YOU.
+GAME OVER</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ewK-TG-c9S" firstAttribute="centerX" secondItem="mxD-ZM-hhx" secondAttribute="centerX" id="4vM-hG-d6Y"/>
+                            <constraint firstItem="ewK-TG-c9S" firstAttribute="top" secondItem="2uN-mk-LK3" secondAttribute="bottom" id="dtS-om-TSi"/>
+                            <constraint firstItem="ewK-TG-c9S" firstAttribute="width" secondItem="mxD-ZM-hhx" secondAttribute="width" multiplier="0.85" id="fvA-So-88Z"/>
+                            <constraint firstItem="ewK-TG-c9S" firstAttribute="height" secondItem="mxD-ZM-hhx" secondAttribute="height" multiplier="0.5" id="n5m-53-Cqj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HTD-8X-ESA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rgj-f9-Cl0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1265" y="93"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1dw-mB-zu0">
+            <objects>
+                <viewController id="pBG-kb-BM3" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="85C-Xp-CQS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hnj-vZ-tJD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bev-W6-ZOu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="52s-Gi-NBV">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Your captors have heard you and now they know where you are.
+GAME OVER</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="52s-Gi-NBV" firstAttribute="centerX" secondItem="Bev-W6-ZOu" secondAttribute="centerX" id="Amy-Zf-h4D"/>
+                            <constraint firstItem="52s-Gi-NBV" firstAttribute="width" secondItem="Bev-W6-ZOu" secondAttribute="width" multiplier="0.85" id="DV7-Mi-cXj"/>
+                            <constraint firstItem="52s-Gi-NBV" firstAttribute="top" secondItem="85C-Xp-CQS" secondAttribute="bottom" id="SCD-bf-q1p"/>
+                            <constraint firstItem="52s-Gi-NBV" firstAttribute="height" secondItem="Bev-W6-ZOu" secondAttribute="height" multiplier="0.5" id="tVu-fa-SXW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4hc-d1-v7i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wcf-QS-gy2" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="-561"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="del-ay-kgE">
+            <objects>
+                <viewController id="K2R-zy-uDF" customClass="MYOAViewController" customModule="MYOA" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Da4-ZO-1I4"/>
+                        <viewControllerLayoutGuide type="bottom" id="HKQ-l2-V5W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4br-Is-gfV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="You try to run after the police and somehow they see you through the rear window.  YOU WON" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AZJ-Hg-y9S">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AZJ-Hg-y9S" firstAttribute="top" secondItem="Da4-ZO-1I4" secondAttribute="bottom" id="BKP-2i-Rv5"/>
+                            <constraint firstItem="AZJ-Hg-y9S" firstAttribute="width" secondItem="4br-Is-gfV" secondAttribute="width" multiplier="0.85" id="OzO-UP-1jD"/>
+                            <constraint firstItem="AZJ-Hg-y9S" firstAttribute="height" secondItem="4br-Is-gfV" secondAttribute="height" multiplier="0.5" id="guk-X5-TAu"/>
+                            <constraint firstItem="AZJ-Hg-y9S" firstAttribute="centerX" secondItem="4br-Is-gfV" secondAttribute="centerX" id="syg-Jt-Ebx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AUu-i5-GkP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GvB-C0-Rkd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="92"/>
+        </scene>
+    </scenes>
+</document>

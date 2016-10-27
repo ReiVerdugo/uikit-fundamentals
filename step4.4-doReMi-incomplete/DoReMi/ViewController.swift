@@ -21,20 +21,19 @@ class ViewController: UIViewController, UITableViewDataSource {
     // Choose some data to show in your table
     
     let model = [
-        // TODO: Fill this array with data
+        "Do", "Re", "Mi", "Fa", "Sol", "La", "Si", "Do"
     ]
     
     // Add the two essential table data source methods here
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //TODO: Implement method to return the correct number of rows.
-        return 0
+        return model.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        //TODO: Implement method to return cell with the correct reuseidentifier and populated with the correct data.
-        let placeholderCell = UITableViewCell()
-        return placeholderCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellReuseIdentifier)
+        cell!.textLabel!.text = model[indexPath.row]
+        return cell!
     }
 }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tnk-Bp-MS0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -37,7 +37,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inw-IW-YVN">
                                         <state key="normal" image="scissors.png"/>
                                         <connections>
-                                            <segue destination="hNY-Zz-RDr" kind="presentation" identifier="scissorsAction" id="RDR-26-joT"/>
+                                            <segue destination="hNY-Zz-RDr" kind="show" identifier="scissorsAction" id="RDR-26-joT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -57,15 +57,17 @@
                             <constraint firstItem="Us4-bC-icv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WbL-Vd-nnm"/>
                             <constraint firstItem="8Wu-cW-7yT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cI0-0c-frO"/>
                             <constraint firstItem="8Wu-cW-7yT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eQ4-IQ-KRP"/>
-                            <constraint firstItem="Us4-bC-icv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.2" id="f4r-xj-IEC"/>
+                            <constraint firstItem="Us4-bC-icv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.25" id="f4r-xj-IEC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FsE-Oe-7Te"/>
                     <connections>
-                        <segue destination="hNY-Zz-RDr" kind="presentation" identifier="paperAction" id="RrQ-9Z-dKg"/>
+                        <segue destination="hNY-Zz-RDr" kind="show" identifier="paperAction" id="RrQ-9Z-dKg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1032.8" y="35.532233883058474"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="G9p-NE-e7Q">
@@ -97,7 +99,7 @@
                             <constraint firstItem="kQJ-Vm-LBY" firstAttribute="centerX" secondItem="tLq-2A-q7t" secondAttribute="centerX" id="5tj-hK-c1X"/>
                             <constraint firstItem="cmK-cP-36q" firstAttribute="width" secondItem="tLq-2A-q7t" secondAttribute="width" multiplier="0.8" id="7Un-3a-zLC"/>
                             <constraint firstItem="kQJ-Vm-LBY" firstAttribute="centerY" secondItem="tLq-2A-q7t" secondAttribute="centerY" multiplier="1.85" id="VOZ-UH-eKZ"/>
-                            <constraint firstItem="ybe-gT-00o" firstAttribute="centerY" secondItem="tLq-2A-q7t" secondAttribute="centerY" multiplier="0.2" id="a7l-X4-Rig"/>
+                            <constraint firstItem="ybe-gT-00o" firstAttribute="centerY" secondItem="tLq-2A-q7t" secondAttribute="centerY" multiplier="0.3" id="a7l-X4-Rig"/>
                             <constraint firstItem="cmK-cP-36q" firstAttribute="centerX" secondItem="tLq-2A-q7t" secondAttribute="centerX" id="hrR-Yk-dat"/>
                             <constraint firstItem="ybe-gT-00o" firstAttribute="centerX" secondItem="tLq-2A-q7t" secondAttribute="centerX" id="i6A-7c-iDY"/>
                             <constraint firstItem="cmK-cP-36q" firstAttribute="top" secondItem="ybe-gT-00o" secondAttribute="bottom" constant="20" id="wUN-vV-nQX"/>
@@ -111,7 +113,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dC-bq-mX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839" y="36"/>
+            <point key="canvasLocation" x="1776.8" y="35.532233883058474"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="116-ib-tBh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tnk-Bp-MS0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dew-aT-1zQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Luc-Di-BHF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAd-Fp-x5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>
@@ -120,6 +140,6 @@
         <image name="scissors.png" width="75" height="65"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RDR-26-joT"/>
+        <segue reference="RrQ-9Z-dKg"/>
     </inferredMetricsTieBreakers>
 </document>

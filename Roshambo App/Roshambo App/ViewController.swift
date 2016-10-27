@@ -26,7 +26,8 @@ class ViewController: UIViewController {
         let nextController = storyboard?.instantiateViewController(withIdentifier: "second") as! SecondViewController
         nextController.playerMove = .Rock
         nextController.opponentMove = generateRandomMove()
-        present(nextController, animated: true, completion: nil)
+//        present(nextController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(nextController, animated: true)
     }
 
     @IBAction func paperAction(_ sender: AnyObject) {
